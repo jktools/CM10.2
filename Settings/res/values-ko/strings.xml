@@ -174,7 +174,6 @@
     <string name="lockscreen_target_title">잠금 화면 바로가기</string>
     <string name="lockscreen_target_summary">잠금 화면 바로가기 설정 확인 또는 변경</string>
     <string name="lockscreen_target_reset">잠금 화면 바로가기 설정 초기화됨</string>
-    <string name="lockscreen_target_save">잠금 화면 바로가기 설정 저장됨</string>
     <string name="lockscreen_target_reset_title">초기화</string>
     <string name="lockscreen_target_reset_message">모든 잠금 화면 바로가기를 삭제하고 기본값으로 되돌리시겠습니까?</string>
     <string name="lockscreen_target_empty">비어 있음</string>
@@ -184,7 +183,8 @@
     <string name="lockscreen_vibrate_enabled_head">잠금 해제시 진동</string>
     <string name="lockscreen_battery_status_title">배터리 상태</string>
     <string name="lockscreen_battery_status_charging">충전할 때만</string>
-    <string name="lockscreen_battery_status_alwayson">항상</string>
+    <string name="lockscreen_battery_status_alwayson">항상 켜기</string>
+	<string name="lockscreen_battery_status_alwaysoff">항상 끄기</string>
     <string name="profiles_settings_title">프로필</string>
     <string name="profiles_add">추가</string>
     <string name="profile_menu_delete">삭제</string>
@@ -282,8 +282,9 @@
     <string name="performance_settings_warning">"이 설정들은 실험적인 것들이며 변경 시 불안정, 충돌, 데이터 손실 또는 하드웨어 고장이 발생할 수 있습니다. 
 
 이 설정들을 변경하였을 경우에는 버그 리포트를 사용하지 말아주시기 바랍니다."</string>
+	<string name="performance_set_on_boot">부팅시 설정</string>
+    <string name="performance_set_on_boot_summary">부팅시 설정을 복원</string>
     <string name="processor_title">프로세서</string>
-    <string name="processor_summary">CPU 거버너와 클럭 속도 변경</string>
     <string name="cpu_cur_freq_title">현재 CPU 주파수</string>
     <string name="cpu_governors_title">CPU 거버너</string>
     <string name="cpu_governors_summary">%S</string>
@@ -291,16 +292,15 @@
     <string name="cpu_min_freq_summary">%s</string>
     <string name="cpu_max_freq_title">최대 CPU 주파수</string>
     <string name="cpu_max_freq_summary">%s</string>
-    <string name="cpu_set_on_boot">부팅시 설정</string>
-    <string name="cpu_set_on_boot_summary">부팅시 프로세서 설정을 복원</string>
     <string name="io_scheds_title">I/O 스케줄러</string>
-    <string name="io_scheds_summary">I/O 스케줄러 변경</string>
     <string name="io_sched_title">I/O 스케줄러</string>
     <string name="io_sched_summary">%S</string>
-    <string name="io_sched_set_on_boot">부팅시 설정</string>
-    <string name="io_sched_set_on_boot_summary">부팅시 I/O 스케줄러 설정을 복원</string>
+    <string name="perf_profile_title">프로필</string>
+    <string name="perf_profile_summary">%s</string>
+    <string name="perf_profile_pwrsv">절전</string>
+    <string name="perf_profile_bal">균형</string>
+    <string name="perf_profile_perf">성능</string>
     <string name="memory_management_title">메모리 관리</string>
-    <string name="memory_management_summary">시스템 성능을 변경하는 메모리의 사용을 사용자 설정</string>
     <string name="pref_zram_title">zRam</string>
     <string name="pref_zram_summary">증가된 가상 용량의 메모리를 압축 (재시작 필요)</string>
     <string name="pref_ksm_title">커널 samepage 병합</string>
@@ -434,6 +434,7 @@
     <string name="hardware_keys_menu_key_title">메뉴 버튼</string>
     <string name="hardware_keys_assist_key_title">검색 버튼</string>
     <string name="hardware_keys_appswitch_key_title">앱전환 버튼</string>
+	<string name="hardware_keys_camera_key_title">카메라 버튼</string>
     <string name="hardware_keys_volume_keys_title">볼륨 버튼</string>
     <string name="hardware_keys_short_press_title">짧게 누를시 동작</string>
     <string name="hardware_keys_long_press_title">길게 누를시 동작</string>
@@ -448,6 +449,7 @@
     <string name="hardware_keys_action_search">검색 도우미</string>
     <string name="hardware_keys_action_voice_search">음성 검색</string>
     <string name="hardware_keys_action_in_app_search">앱 내부 검색</string>
+	<string name="hardware_keys_action_launch_camera">카메라 실행</string>
     <string name="home_wake_title">홈 버튼으로 켜기</string>
     <string name="home_wake_summary">홈 버튼을 눌러 화면 켜기</string>
     <string name="volume_wake_title">볼륨 버튼으로 켜기</string>
@@ -545,6 +547,7 @@
     <string name="lockscreen_buttons_previous">이전 곡</string>
     <string name="lockscreen_buttons_playpause">음악 재생/일시 정지</string>
     <string name="lockscreen_buttons_toggle_sound">벨소리 모드 전환</string>
+	<string name="lockscreen_buttons_sleep">절전 모드</string>
     <string name="quick_settings_panel_title">빠른 설정 패널</string>
     <string name="title_static_tiles">고정 타일</string>
     <string name="tile_picker_title">타일 및 레이아웃</string>
@@ -575,6 +578,7 @@
     <string name="title_tile_quiet_hours">조용히 모드</string>
     <string name="title_tile_volume">볼륨</string>
     <string name="title_tile_expanded_desktop">확장 데스크탑</string>
+	<string name="title_tile_network_adb">네트워크 ADB</string>
     <string name="title_dynamic_tiles">동적 타일</string>
     <string name="dynamic_tiles_note_title">정보</string>
     <string name="dynamic_tiles_note_summary">동적 타일은 평상시에는 보이지 않으며 시스템 이벤트 발생에 따라 나타납니다.</string>
@@ -679,7 +683,6 @@
     <string name="navigation_ring_title">빠른 실행 바로가기</string>
     <string name="navring_target_reset_message">모든 사용자 탐색 바 바로가기를 삭제하고 기본값으로 복원하시겠습니까?</string>
     <string name="navring_target_reset">탐색 바 바로가기 기본값 초기화</string>
-    <string name="navring_target_save">탐색 바 바로가기가 저장됨</string>
     <string name="navring_action_open_ime_switcher">입력기 선택 열기</string>
     <string name="navring_action_kill_app">앱 종료</string>
     <string name="navring_action_none">없음</string>
@@ -799,6 +802,10 @@
     <string name="backlight_summary_enabled">사용함</string>
     <string name="gamma_tuning_title_head">감마 보정</string>
     <string name="gamma_tuning_summary_head">감마 값 조정</string>
+	<string name="gamma_tuning_control_set_header">그룹 %d</string>
+    <string name="gamma_tuning_contrast">명암</string>
+    <string name="gamma_tuning_brightness">밝기</string>
+    <string name="gamma_tuning_saturation">채도</string>
     <string name="more_device_controls_title">더보기…</string>
     <string name="more_device_settings_title">기타 장치 옵션</string>
     <string name="sensors_motors_title">센서 및 모터</string>
@@ -810,17 +817,25 @@
     <string name="font_size_sample">샘플</string>
     <string name="selinux_enable_title">보안 강화 안드로이드</string>
     <string name="selinux_enable_warning">"장치에 SEAndroid, 고급 보안 메커니즘을 활성화하려고합니다. 이 옵션은 디버깅 목적으로 존재하고 장치가 하드웨어의 일부(또는 전부)를 차단하거나 중단 될수 있으며 완전히 준비가 되지 않을 가능성이 매우 높습니다. 진행 하시겠습니까?"</string>
+	<string name="gps_download_data_wifi_only">다운로드 GPS는 Wi-Fi 네트워크를 통한 데이터만 지원합니다</string>
     <string name="intent_sender_data_label">데이터:</string>
     <string name="font_size_preview_text">Servez à ce monsieur une bière et des kiwis.</string>
     <string name="default_date_format">yyyy/MM/dd</string>
     <string name="sync_item_title">%s</string>
     <string name="bluetooth_confirm_passkey_msg">&lt;b>%1$s&lt;/b>와(과) 페어링하려면&lt;br>&lt;br>이 패스키(&lt;b>%2$s&lt;/b>)가 표시되는지 확인하세요.&lt;br>&lt;br></string>
+	<string name="bluetooth_enter_pin_msg_hs">&lt;b>%1$s&lt;/b>와(과) 페어링하려면&lt;br>&lt;br>장치의 필요한 PIN(16자리 이상)를 하세요.&lt;br>&lt;br</string>
+	<string name="bluetooth_profile_sap">SIM 액세스</string>
+    <string name="bluetooth_sap_profile_summary_connected">SIM 액세스 서버에 연결</string>
+    <string name="bluetooth_sap_profile_summary_use_for">SIM 액세스에 사용</string>
+    <string name="wifi_disabled_association_rejected">연결 거부</string>
     <string name="debug_intent_sender_label">Debug intent sender</string>
     <string name="testing_sim_toolkit">SIM 툴킷</string>
     <string name="additional_system_update" />
     <string name="additional_system_update_menu" />
     <string name="max_cpu_freq_file">/sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq</string>
     <string name="min_cpu_freq_file">/sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq</string>
+    <string name="config_perf_profile_prop" />
+    <string name="config_perf_profile_default_entry" />
     <string name="input_method_selector_show_automatically_value">0</string>
     <string name="input_method_selector_always_show_value">1</string>
     <string name="input_method_selector_always_hide_value">2</string>

@@ -305,6 +305,8 @@ Copyright © 2012 The CyanogenMod Project"</string>
     <string name="pref_disk_usage_warning_level_summary">사용 가능한 디스크 공간의 %1$s퍼센트에 도달할때 디스크 사용량 위젯에 다른 색상으로 표시</string>
     <string name="pref_compute_folder_statistics">폴더 통계 계산</string>
     <string name="pref_compute_folder_statistics_on">경고! 폴더 통계 계산은 시간과 시스템 자원 비용이 많이 듭니다</string>
+	<string name="pref_display_thumbs">미리보기</string>
+    <string name="pref_display_thumbs_summary">앱, 음악 파일, 사진 및 비디오에 대한 미리보기 이미지를 표시합니다.</string>
     <string name="pref_use_flinger">스와이프 제스처 사용</string>
     <string name="pref_use_flinger_summary">파일이나 폴더를 삭제하려면 왼쪽에서 오른쪽으로 스와이프하는 제스처를 사용.</string>
     <string name="pref_general_advanced_settings_category">고급</string>

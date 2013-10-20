@@ -11,6 +11,7 @@
     <string name="widget_12_hours_format_no_ampm_m">:mm</string>
     <string name="widget_12_hours_format_m">:mm<font size="15">aa</font></string>
     <string name="widget_24_hours_format_h">kk</string>
+	<string name="widget_24_hours_format_h_api_16">HH</string>
     <string name="widget_24_hours_format_m">:mm</string>
     <string name="weather_0">토네이도</string>
     <string name="weather_1">열대 폭풍</string>
@@ -91,6 +92,7 @@
     <string name="clock_font_minutes_title">분 볼드체</string>
     <string name="clock_font_date_title">날짜 및 알람 볼드체</string>
     <string name="show_alarm_title">다음 알람 표시</string>
+	<string name="clock_am_pm_title">AM/PM 표시</string>
     <string name="weather_enabled">사용함</string>
     <string name="weather_enable">날씨 표시</string>
     <string name="weather_source">Yahoo! 날씨</string>
@@ -112,6 +114,7 @@
     <string name="weather_alternate_icons_summary">기본(컬러)과 대체(화이트) 아이콘 사이를 전환하려면 선택</string>
     <string name="weather_show_when_minimized_title">최소화 할때 표시</string>
     <string name="weather_show_when_minimized_summary">위젯을 최소화 할때 요약 날씨 정보를 표시합니다</string>
+	<string name="weather_select_location">위치 선택</string>
     <string name="calendar_title">다음 일정 표시</string>
     <string name="calendars_title">캘린더 일정</string>
     <string name="calendars_summary">캘린더의 일정 찾기</string>
